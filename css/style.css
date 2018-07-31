@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 14px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-nav_link {
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.main-nav_link:hover {
+    color: #81b3d2;
+}
+.main-nav_link:active {
+    opacity: 0.3;
+}
+.main-description {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+.reason_header {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+.reason_number,
+.reason_description {
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+
+.features_header {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.features_discription {
+    text-align: center;
+}
+.hotel-search_question {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.hotel-search_btn {
+    font-size: 21px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    
+    background-color: #766357;
+}
+.hotel-search p {
+    text-align: center;
+}
+.hotel-search_form label,
+.hotel-search_form input {
+    font-weight: 700;
+}
+.hotel-search_submit {
+    font-size: 21px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    background-color: #81b3d2;
+}
+.hash-tag {
+    font-size: 21px;
+    color: black;
+    text-decoration: none;
+}
+.hash-tag .inst-link {
+    color: black;
+    text-decoration: none;  
+}
+.hash-tag .inst-link:hover {
+    color: #81b3d2;
+}
+.hash-tag .inst-link:active {
+    opacity: 0.3;
+}
+
+.soc-links_link {
+    color: black;
+    text-decoration: none;  
+}
+.soc-links_link:hover {
+    color: #81b3d2;
+}
+.soc-links_link:active {
+    opacity: 0.3;
+}
+.copyright_link {
+    color: black;
+    text-decoration: none;  
+}
+.copyright_link:hover {
+    color: #81b3d2;
+}
+.copyright_link:active {
+    opacity: 0.3;
+}
