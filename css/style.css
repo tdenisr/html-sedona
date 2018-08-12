@@ -363,12 +363,25 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     height: 595px;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
 }
 .modal-block {
     display: none;    
 }
+.no-js .modal-block {
+    display: block;
+    position: static;
+}
+.no-js .map {
+    display: block;
+    position: static;
+}
+.no-js .main-footer {
+    margin-top: -120px;
+}
 .modal-block__show {
+    position: absolute;
+    
     display: block;
     visibility: visible;
     -webkit-animation-duration: 0.4s;
@@ -376,6 +389,20 @@ input[type="radio"].visually-hidden {
     -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
 }
+.js .map {
+    display: none;
+}
+.no-js .js-map {
+    display: none;
+}
+.js .js-map {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 @-webkit-keyframes bounceIn {
   from,
   20%,
@@ -470,10 +497,13 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: stretch;
+    position: relative;
+    z-index: 2;
     min-height: 120px;
     align-items: center;
     text-align: center;
     vertical-align: middle;
+    
 }
 .main-footer > div {
     flex-basis: 400px;
