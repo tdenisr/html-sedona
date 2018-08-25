@@ -77,6 +77,9 @@ input[type="radio"].visually-hidden {
 .main-nav_link:active {
     opacity: 0.3;
 }
+.main-nav_link__current {
+    color: #6c5b54;
+}
 .big-logo {
     min-height: 510px;
     padding-top: 1px;
@@ -573,4 +576,94 @@ input[type="radio"].visually-hidden {
 }
 .copyright_link:active {
     opacity: 0.3;
+}
+.hotels-filters {
+    display: block;
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    min-height: 240px;
+    
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    
+    background-position: center;
+    background-image: url("../img/filter_background.jpg");
+    background-repeat: no-repeat;
+}
+.hotels-filters_form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hotels-filters_form .infrastraction,
+.hotels-filters_form .hotels-type,
+.hotels-filters_form .hotels-cost {
+    display: flex;
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    
+    border: none;
+}
+.hotels-filters_form .hotels-cost {
+    min-width: 318px;
+}
+.hotels-filters_form .hotels-cost:last-child {
+        margin-left: auto;
+}
+.hotels-filters_form legend {
+    font-size: 17px;
+}
+.hotels-filters_form p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.infrastraction input[type="checkbox"],
+.hotels-type input[type="checkbox"]{
+    display: none;
+}
+.infrastraction .infrastraction_label,
+.hotels-type .hotels-type_label {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+.infrastraction .infrastraction_label::before,
+.hotels-type .hotels-type_label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+}
+.infrastraction input[type="checkbox"]:disabled + .infrastraction_label::before,
+.hotels-type input[type="checkbox"]:disabled + .hotels-type_label::before {
+    opacity: 0.5;
+}
+.infrastraction input[type="checkbox"]:checked + .infrastraction_label::before,
+.hotels-type input[type="checkbox"]:checked + .hotels-type_label::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    border: none;
+    background: url("../img/checkbox-on.svg") center no-repeat;
+    background-size: contain;
+}
+.hotels-cost input[type="number"] {
+    display: inline-block;
+    
 }

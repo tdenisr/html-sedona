@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">    
     <head>
-        <title>Отели в Седоне</title>
+        <title>Поиск гостиниц в Седоне</title>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+      <div class="container">
         <header class="main-header">
             <img class="small-logo" alt="Эмблема Седоны" src="img/small-logo.png">
             <nav class="main-nav">
@@ -12,42 +16,60 @@
                     <li class="main-nav_item"><a href="#" class="main-nav_link">Информация</a></li>
                     <li class="main-nav_item"><a href="#" class="main-nav_link">Фото и видео</a></li>
                     <li class="main-nav_item"><a href="#" class="main-nav_link">Карта штата</a></li>
-                    <li class="main-nav_item"><a class="main-nav_link main-nav_link__current">Гостиницы</a></li>
+                    <li class="main-nav_item"><a href="#" class="main-nav_link main-nav_link__current">Гостиницы</a></li>
                 </ul>
-            </nav>            
+            </nav>
         </header>
         <main>
-            <h1 class=visual-hidden>Поиск гостиниц в Седоне</h1>
+            <h1 class=visually-hidden>Поиск гостиниц в Седоне</h1>
             <section class="hotels-filters">
-                <h2 class="visual-hidden">Подбор по параметрам</h2>
+                <h2 class="visually-hidden">Подбор по параметрам</h2>
                 <form class="hotels-filters_form" method="get" action="https://echo.htmlacademy.ru/">
                     <fieldset class="infrastraction">
                     <legend class="infrastraction_caption">Инфраструктура:</legend>
-                        <input class="infrastraction_checkbox" type="checkbox" id="infrastraction-swimming" name="infrastraction-swimming" value="swimming">
-                        <label class="infrastraction_label" for="infrastraction-swimming">Бассейн</label>
-                        <input class="infrastraction_checkbox" type="checkbox" id="infrastraction-parking" name="infrastraction-parking" value="parking">
-                        <label class="infrastraction_label" for="infrastraction-parking">Парковка</label>
-                        <input class="infrastraction_checkbox" type="checkbox" id="infrastraction-wifi" name="infrastraction-wifi" value="wifi">
-                        <label class="infrastraction_label" for="infrastraction-wifi">Wi-Fi</label>
+                        <p>
+                            <input class="infrastraction_checkbox" type="checkbox" id="infrastraction-swimming" name="infrastraction-swimming" value="swimming">
+                            <label class="infrastraction_label" for="infrastraction-swimming">Бассейн</label>
+                        </p>
+                        <p>
+                            <input class="infrastraction_checkbox" disabled type="checkbox" id="infrastraction-parking" name="infrastraction-parking" value="parking">
+                            <label class="infrastraction_label" for="infrastraction-parking">Парковка</label>
+                        </p>
+                        <p>
+                            <input class="infrastraction_checkbox" type="checkbox" id="infrastraction-wifi" name="infrastraction-wifi" value="wifi">
+                            <label class="infrastraction_label" for="infrastraction-wifi">Wi-Fi</label>
+                        </p>
                     </fieldset>
                     <fieldset class="hotels-type">
                     <legend class="hotels-type_caption">Тип жилья:</legend>
-                        <input class="hotels-type_checkbox" type="checkbox" id="hotels-type-hotel" name="hotels-type-hotel" value="hotel">
-                        <label class="hotels-type_label" for="hotels-type-hotel">Отель</label>
-                        <input class="hotels-type_checkbox" type="checkbox" id="hotels-type-motel" name="hotels-type-parking" value="motel">
-                        <label class="hotels-type_label" for="hotels-type-motel">Мотель</label>
-                        <input class="hotels-type_checkbox" type="checkbox" id="hotels-type-apartment" name="hotels-type-apartment" value="apartment">
-                        <label class="hotels-type_label" for="hotels-type-apartment">Апартаменты</label>
+                        <p>
+                            <input class="hotels-type_checkbox" type="checkbox" id="hotels-type-hotel" name="hotels-type-hotel" value="hotel">
+                            <label class="hotels-type_label" for="hotels-type-hotel">Отель</label>
+                        </p>
+                        <p>
+                            <input class="hotels-type_checkbox" type="checkbox" id="hotels-type-motel" name="hotels-type-parking" value="motel">
+                            <label class="hotels-type_label" for="hotels-type-motel">Мотель</label>
+                        </p>
+                        <p>
+                            <input class="hotels-type_checkbox" type="checkbox" id="hotels-type-apartment" name="hotels-type-apartment" value="apartment">
+                            <label class="hotels-type_label" for="hotels-type-apartment">Апартаменты</label>
+                        </p>
                     </fieldset>
                     <fieldset class="hotels-cost">
                     <legend class="hotels-cost_caption">Стоимость в сутки:</legend>
-                        <label class="hotels-cost_from" for="hotels-cost-min">От</label>
-                        <input class="hotels-cost_min" type="number" id="hotels-cost-min" name="hotels-cost-min" value="0" min="0" max="5000">
-                        <label class="hotels-cost_to" for="hotels-cost-max">До</label>
-                        <input class="hotels-cost_max" type="number" id="hotels-cost-max" name="hotels-cost-max" value="5000" min="0" max="5000">
-
-                        <input class="hotels-cost_range hotels-cost_range_min" type="range" id="hotels-cost-range-min" name="hotels-cost-range-min" min="0" max="5000" step="1">
-                        <input class="hotels-cost_range hotels-cost_range_max" type="range" id="hotels-cost-range-max" name="hotels-cost-range-max" min="0" max="5000" step="1">
+                        <p>
+                            <label class="hotels-cost_from" for="hotels-cost-min">От</label>
+                            <input class="hotels-cost_min" type="number" id="hotels-cost-min" name="hotels-cost-min" value="0" min="0" max="5000">
+                            
+                            
+                            <label class="hotels-cost_to" for="hotels-cost-max">До</label>
+                            <input class="hotels-cost_max" type="number" id="hotels-cost-max" name="hotels-cost-max" value="5000" min="0" max="50000">
+                            
+                        </p>
+                        <p>
+                            <input class="hotels-cost_range hotels-cost_range_min" type="range" id="hotels-cost-range-min" name="hotels-cost-range-min" min="0" max="5000" step="1">
+                            <input class="hotels-cost_range hotels-cost_range_max" type="range" id="hotels-cost-range-max" name="hotels-cost-range-max" min="0" max="5000" step="1">
+                        </p>
                     </fieldset>
                 </form>
             </section>
