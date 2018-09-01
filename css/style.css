@@ -510,7 +510,6 @@ input[type="radio"].visually-hidden {
   }
 }
 .main-footer {
-    margin-top: 475px;
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: stretch;
@@ -520,7 +519,9 @@ input[type="radio"].visually-hidden {
     align-items: center;
     text-align: center;
     vertical-align: middle;
-    
+}
+.main-footer__margin-top {
+    margin-top: 475px;
 }
 .main-footer > div {
     flex-basis: 400px;
@@ -804,7 +805,7 @@ input[type="radio"].visually-hidden {
 .result-header {
     display: flex;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 73px;
     margin-right: 73px;
     font-size: 12px;
@@ -901,21 +902,63 @@ input[type="radio"].visually-hidden {
     width: auto;
     border-top: 1px solid #e5e5e5;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 73px;
     padding-right: 73px;
 }
+.result-list_item:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+.hotel-description {
+    margin-left: 30px;
+    width: 350px;
+}
 .hotel-name {
-    display: inline-block;
+    display: block;
     margin-top: 0;
+    margin-bottom: 2px;
     
+    font-size: 21px;
+    line-height: 26px;
 }
 .hotel-photo {
+    margin-top: 5px;
     float: left;
 }
+.hotel-tier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.hotel-type {
+    display: inline-block;
+    width: 111px;
+}
+.hotel-price {
+    display: inline-block;
+}
+.booking {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.booking_more-detal,
+.booking_btn {
+    display: inline-block;
+    padding-right: 17px;
+    padding-left: 17px;
+    margin-right: 2px;
+}
 .hotel-stars {
-   
+    margin-left: auto;
 }
 .hotel-rating {
-  
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 14px;
+    background-color: #f2f2f2;
+    color: #666666;
+    line-height: 27px;
+
 }
